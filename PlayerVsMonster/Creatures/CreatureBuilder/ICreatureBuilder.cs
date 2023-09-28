@@ -13,9 +13,9 @@ namespace PlayerVsMonster.Creatures.CreatureBuilder
 
         public ICreatureBuilder WithDefensePoints(int defensePoints);
 
-        public Monster GetResultMonster();
+        public Monster GetBuildedMonster();
 
-        public Player GetResultPlayer();
+        public Player GetBuildedPlayer();
 
         public ICreatureBuilder WithCreatureName(string name);
 

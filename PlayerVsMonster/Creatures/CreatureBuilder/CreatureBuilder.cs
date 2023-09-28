@@ -11,12 +11,12 @@ namespace PlayerVsMonster.Creatures.CreatureBuilder
         private int _defensePoint = 0;
         private int _maxHealth = 1;
 
-        public Monster GetResultMonster()
+        public Monster GetBuildedMonster()
         {
             return new Monster(CompileAllStats(), _creatureName);
         }
 
-        public Player GetResultPlayer()
+        public Player GetBuildedPlayer()
         {
             return new Player(CompileAllStats(), _creatureName);
         }

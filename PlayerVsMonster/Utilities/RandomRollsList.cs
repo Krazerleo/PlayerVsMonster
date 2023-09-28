@@ -9,7 +9,7 @@ namespace PlayerVsMonster.Utilities
         {
             for (int i = 0; i < generateElementsCount; i++)
             {
-                yield return randomService.Next(new IntRange(0, 7));
+                yield return randomService.Next(new IntRange(1, 7));
             }
         }
     }

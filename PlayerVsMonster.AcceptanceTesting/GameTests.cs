@@ -3,6 +3,8 @@ using PlayerVsMonster.Creatures.CreatureBuilder;
 using PlayerVsMonster.Services;
 using PlayerVsMonster.Utilities;
 
+using NUnit.Framework;
+
 namespace PlayerVsMonster.AcceptanceTesting
 {
     [TestFixture]
@@ -76,7 +78,7 @@ namespace PlayerVsMonster.AcceptanceTesting
                 .WithMaxHealth(10)
                 .WithAttackPoints(35)
                 .WithDamageRange(new IntRange(20, 20))
-                .GetResultPlayer();
+                .GetBuildedPlayer();
             });
         }
 
@@ -91,7 +93,7 @@ namespace PlayerVsMonster.AcceptanceTesting
                 .WithMaxHealth(10)
                 .WithAttackPoints(20)
                 .WithDamageRange(new IntRange(20, 20))
-                .GetResultPlayer();
+                .GetBuildedPlayer();
             });
         }
 
@@ -104,7 +106,7 @@ namespace PlayerVsMonster.AcceptanceTesting
                 .WithMaxHealth(10)
                 .WithAttackPoints(20)
                 .WithDamageRange(new IntRange(20, 20))
-                .GetResultPlayer();
+                .GetBuildedPlayer();
 
             var monsterStats = _player.CreatureStats with { AttackPoints = 20 };
             _monster = new Monster(monsterStats, "monster");

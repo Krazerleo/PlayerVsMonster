@@ -6,7 +6,7 @@ namespace PlayerVsMonster.Services
     {
         public int Next(IntRange range)
         {
-            return range.End;
+            return range.End-1;
         }
     }
 }

@@ -2,7 +2,8 @@
 {
     public class Monster : Creature
     {
-        public Monster(CreatureStats creatureStats, string name) : base(creatureStats, name)
+        public Monster(CreatureStats creatureStats, string name) :
+            base(creatureStats, name)
         {
         }
     }

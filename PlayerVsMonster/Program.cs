@@ -19,7 +19,7 @@ namespace PlayerVsMonster
                 .WithMaxHealth(10)
                 .WithAttackPoints(20)
                 .WithDamageRange(new IntRange(9, 9))
-                .GetResultPlayer();
+                .GetBuildedPlayer();
 
             var monsterStats = player.CreatureStats with { AttackPoints = 20 };
             var monster = new Monster(monsterStats, "monster");
